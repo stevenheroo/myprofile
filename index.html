@@ -10,6 +10,7 @@
         </head>
     </header>
     <body>
+        <img class="my-logo" src="images/logo6.svg" alt="skep"/>
         <div class="welcome">
             <h5>Welcome to my site</h5>
         </div>
@@ -30,21 +31,25 @@
         </div>
         <!-- Simple modal dialog containing a form -->
         <div id="myModal" class="modal">
-            <form method="dialog" class="modal-content">
+            <form class="modal-content" action="https://formspree.io/f/mbjboole" method="POST">
             <p>
-                <label>Favorite animal:
-                <select>
-                    <option value="default">Choose…</option>
-                    <option>Brine shrimp</option>
-                    <option>Red panda</option>
-                    <option>Spider monkey</option>
-                </select>
-                </label>
+                <h5 style="color: grey; opacity: 0.5px; padding: 10px;">You need a developer, I need to make my ideas come to live. Together we make a great pair.
+                    Drop me a line below, or message me on Twitter @SteveHero10</h5>
             </p>
-            <div>
-                <button value="cancel" class="close">Cancel</button>
-                <button id="confirmBtn" value="default">Confirm</button>
+            <div class="modal-inputs">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="Job offer">
+                    <option>Select Job offer</option>
+                    <option>Web Development</option>
+                    <option>Mobile App Development</option>
+                    <option>Recommendation</option>
+                    <option>Other</option>
+                </select>
+                <textarea name="message" placeholder="Message" required></textarea>
             </div>
+                <button value="cancel" class="close">Cancel</button>
+                <button type="submit">Send</button>
             </form>
         </div>
         <div>
@@ -60,7 +65,7 @@
               <div class="col-sm-4">
                 <span class="fa fa-vcard"></span>
                 <h3>About Me</h3>
-                <p>I'm Stephen Fianu. I am a software developer. I am passionate about helping people or businesses solve problems 
+                <p>I'm Stephen Fianu. I am a software developer. I am passionate about helping people and businesses solve problems 
                     with Information Technology. Whenever I don't write programming logics, I find designing(UI/UX) very useful.<br>
 
                     <p><small style="color: rgb(167, 113, 113); opacity: 0.7;  text-align: center;">#web #mobile #backend #ui/ux</small></p>

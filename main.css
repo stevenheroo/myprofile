@@ -114,6 +114,19 @@ body {
     border-radius: 10px 96px 10px 112px;
 }
 
+.my-logo {
+    position: absolute;
+    width: 9rm;
+    height: 3.5rem;
+    left: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.my-logo:hover {
+    opacity: 0.5;
+}
+
 .hire-btn {
     display: flex;
     flex-direction: row;
@@ -130,6 +143,7 @@ body {
     box-shadow: 0px 4px 30px #7c4848;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .hire-btn:hover {
@@ -153,11 +167,30 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.modal-inputs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 1rem;
+}
+
+.modal-inputs input {
+    padding: 10px;
+    gap: 20px;
+}
+
+.modal-inputs textarea {
+    height: 6rem;
+    padding: 2px;
 }
 
 /* The Close Button */
@@ -183,6 +216,7 @@ body {
     display: flex;
     padding: 5%;
 }
+
 #about .fa{
     padding: 18px 15px;
     border: 2px solid #914343;
