@@ -1,0 +1,54 @@
+@media only screen and (max-width: 700px) {
+    .img-box {
+        display: none;
+    }
+    
+    .my-img {
+        display: none;
+    }
+
+    .profiles {
+        top: 300px;
+        left: 12rem;
+    }
+
+    .profiles .fa {
+        padding-right: 20px;
+    }
+
+    .hire-btn {
+        display: none;
+    }
+
+    #about .row{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .img-box {
+        width: 230px;
+        height: 230px;
+        left: 700px;
+    }
+    
+    .my-img {
+        width: 230px;
+        height: 230px;
+        left: 710px;
+    }
+
+    .profiles {
+        top: 300px;
+        left: 12rem;
+    }
+
+    .hire-btn {
+        display: none;
+    }
+
+    #about .row{
+        width: 1000px;
+    }
+}
