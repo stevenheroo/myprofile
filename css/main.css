@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 * {
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    scrollbar-width: normal;
+    scrollbar-color: #914343 #fff;
 }
 body {
-    background:#F3C7C7;
+    min-height: 100vh;
+    background: #F3C7C7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
 }
 
 .welcome {
@@ -29,10 +43,7 @@ body {
     height: 168px;
     left: 189px;
     top: 100px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 44px;
     line-height: 50px;
     display: flex;
@@ -64,7 +75,7 @@ body {
     top: 230px;
 }
 .profiles a {
-    padding-right: 10px;
+    padding-right: 1rem;
     color: #000000;
     cursor: pointer;
 }
@@ -90,24 +101,17 @@ body {
     color: #914343;
 }
 
-.img-box {
+.my-img{
     position: absolute;
-    width: 280px;
-    height: 280px;
-    left: 808px;
-    top: 90px;
-
-    background: #F38E8E;
-    border-radius: 10px 96px 10px 112px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 5rem;
+    left: 55rem;
 }
 
-.my-img {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    left: 820px;
-    top: 80px;
-    border-radius: 10px 96px 10px 112px;
+.my-img:hover {
+    opacity: 0.8;
 }
 
 .my-logo {
@@ -159,8 +163,15 @@ body {
     opacity: 0.5;
 }
 
+.qoute {
+    position: absolute;
+    top: 460px;
+    left: 200px;
+    opacity: 0.4;
+    font-style: italic
+}
+
 .hire-btn {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -169,11 +180,11 @@ body {
     width: 132px;
     height: 45px;
     left: 600px;
-    top: 380px;
+    top: 550px;
     color: #fff;
     background: #272424;
     box-shadow: 0px 4px 20px #7c4848;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition-duration: 00.5s;
 }
@@ -200,7 +211,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #f3d9d9;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -217,13 +228,22 @@ body {
 }
 
 .modal-inputs input {
+    background-color: #fdeded;
     padding: 10px;
     gap: 20px;
+    border: none;
 }
 
 .modal-inputs textarea {
+    background-color: #fdeded;
+    border: none;
     height: 6rem;
     padding: 2px;
+}
+
+.modal-inputs select {
+    background-color: #fdeded;
+    border: none;
 }
 
 /* The Close Button */
@@ -237,37 +257,111 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 #about {
-    position: absolute;
-    top: 500px;
-    width: auto;
-    background-color: #F38E8E;
-}
-#about .row{
-    display: flex;
-    padding: 5%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
 }
 
-#about .fa{
-    padding: 18px 15px;
-    border: 2px solid #914343;
-    color: #914343;
-    border-radius: 50%;
-    font-size: 40px;
-    height: 80px;
-    width: 80px;
-    transition-duration: 0.5s;
-    margin: auto;
+
+#about p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;;
+    line-height: 2.5rem;
 }
-#about .fa:hover{
-    border: none;
-    font-size: 60px;
-    color: #000;
+
+#skill {
+    padding-top: 2rem;
+    display: flex;
+    height: 100vh;
 }
-#about h3{
-    color: #000;
-    text-align: left;
+
+#skill p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;;
+    line-height: 2.5rem;
+    margin-left: 4rem;
 }
-#about p{
-    line-height: 1.7;
+
+.tools {
+    display: flex;
+    margin-top: 0;
 }
+
+#skill ul,
+li {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#skill ul {
+    margin: 2em 0;
+}
+
+#skill li {
+    margin: 1em;
+    margin-left: 3em;
+}
+
+#skill li:before {
+    content: '\f006';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1.5em;
+    color: #7c4848;
+}
+
+.hidden {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    align-items: center;
+    color: #010C1A;
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(0.3px);
+    transform: translate(10%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0);
+}
+
+.hidden h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #7c4848;
+}
+
+.hidden a {
+    font-size: 12px;
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden a:hover {
+    color: #7c4848;
+    transition-duration: 1.5s;
+}
+
+.card {
+    
+}
+
+
+
+

@@ -1,35 +1,3 @@
-// const updateButton = document.getElementById('updateDetails');
-// const favDialog = document.getElementById('modal');
-// const outputBox = document.querySelector('output');
-// const selectEl = favDialog.querySelector('select');
-// const confirmBtn = favDialog.querySelector('#confirmBtn');
-
-// // If a browser doesn't support the dialog, then hide the
-// // dialog contents by default.
-// if (typeof favDialog.showModal !== 'function') {
-//   favDialog.hidden = true;
-//   /* a fallback script to allow this dialog/form to function
-//      for legacy browsers that do not support <dialog>
-//      could be provided here.
-//   */
-// }
-// // "Update details" button opens the <dialog> modally
-// updateButton.addEventListener('click', () => {
-//   if (typeof favDialog.showModal === "function") {
-//     favDialog.showModal();
-//   } else {
-//     outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
-//   }
-// });
-// // "Favorite animal" input sets the value of the submit button
-// selectEl.addEventListener('change', (e) => {
-//   confirmBtn.value = selectEl.value;
-// });
-// // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-// favDialog.addEventListener('close', () => {
-//   outputBox.value = `${favDialog.returnValue} button clicked - ${(new Date()).toString()}`;
-// });
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -38,6 +6,23 @@ var btn = document.getElementById("updateDetails");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+const hiddenElements = document.querySelectorAll('.hidden');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show')
+    }
+    else{
+      entry.target.classList.remove('show')
+    }
+  });
+});
+
+//observer each element
+hiddenElements.forEach((elem) => observer.observe(elem));
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {

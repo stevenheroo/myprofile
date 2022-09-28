@@ -12,36 +12,50 @@
         </head>
     </header>
     <body>
-        <div class="pulser"></div>
-        <div class="pulser1"></div>
-        <div class="pulser2"></div>
-        <div class="pulser3"></div>
-        <div class="pulser4"></div>
-        <div class="pulser5"></div>
-        <div class="pulser6"></div>
-
+        <div id="scroll-bar" class="scroll-bar"></div>
+        <section class="container">
             <img class="my-logo" src="images/logo6.svg" alt="skep"/>
-        
-        <div class="welcome">
-            <h5>Welcome to my site</h5>
-        </div>
-        <div class="intro">
-            <p>Hi! I’m Stephen<br>  
-                Backend Developer
-            </p>
-            <p class="intro-summary">
-                It's a pleasure to meet you. Looking for web developer / applications developer,
-                you are at the right place
-                </small>
-            </p>
-            <div class="profiles">
-                <a target="_blank" href="https://github.com/stevenheroo" title="check my git profile"><i class="fa fa-github" style="font-size:24px"></i></a>
-                <a target="_blank" href="https://twitter.com/SteveHero10" title="my twitter profile"><i class="fa fa-twitter" style="font-size:24px"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/fianu-stephen-7a880319a/" title="my linkedin profile"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+            
+            <div class="container2">
+                <div class="pulser"></div>
+                <div class="pulser1"></div>
+                <div class="pulser2"></div>
+                <div class="pulser3"></div>
+                <div class="pulser4"></div>
+                <div class="pulser5"></div>
+                <div class="pulser6"></div>
+                <div class="welcome">
+                    <h5>Welcome to my site</h5>
+                </div>
+                <div class="intro">
+                    <p>Hi! I’m <span style="transition-delay: 100ms;">S</span>tephen<br>  
+                        Backend Developer
+                    </p>
+                    <p class="intro-summary">
+                        It's a pleasure to meet you. Looking for web developer / applications developer,
+                        you are at the right place
+                        </small>
+                    </p>
+                    <div class="profiles">
+                        <a target="_blank" href="https://github.com/stevenheroo" title="check my git profile"><i class="fa fa-github" style="font-size:24px"></i></a>
+                        <a target="_blank" href="https://twitter.com/SteveHero10" title="my twitter profile"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/fianu-stephen-7a880319a/" title="my linkedin profile"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div>
+                <button id="updateDetails" class="hire-btn">Get In Touch</button>
+                <output></output>
+            </div>
+            <div>
+                <div class="pulser7"></div>
+                <img class="my-img" src="images/steve.jpg"/>
+            </div>
+            <p class="qoute"><span id="auto-type"></span></p>
+        </section>
         <!-- Simple modal dialog containing a form -->
-        <div id="myModal" class="modal">
+        <section id="myModal" class="modal">
             <form class="modal-content" action="https://formspree.io/f/mbjboole" method="POST">
             <p>
                 <h5 style="color: rgb(29, 26, 26); font-family: sans-serif; opacity: 0.5px;">You need a developer, I need to make my ideas come to life. Together we make a great pair.
@@ -63,41 +77,64 @@
                 <button type="submit">Send</button>
                 <button value="cancel" class="close">Cancel</button>
             </form>
-        </div>
-        <div>
-            <button id="updateDetails" class="hire-btn">Hire me?</button>
-            <output></output>
-        </div>
-        <div class="img-box"></div>
-        <div >
-            <img class="my-img" src="images/steve.jpg"/>
-        </div>
+        </section>
+        
         <section id="about">
-            <div class="row text-center">
-              <div class="col-sm-4">
-                <span class="fa fa-vcard"></span>
+            <div class="hidden">
                 <h3>About Me</h3>
-                <p>I'm Stephen Fianu. I am a software developer. I am passionate about helping people and businesses solve problems 
-                    with Information Technology. Whenever I don't write programming logics, I find designing(UI/UX) very useful.<br>
-
-                    <p><small style="color: rgb(167, 113, 113); opacity: 0.7;  text-align: center;">#web #mobile #backend #ui/ux</small></p>
-                    </p>
-              </div>
-              <div class="col-sm-4">
-                <span class="fa fa-laptop"></span>
-                <h3>Projects</h3>
-                <p>Building websites is my bread and butter. Working with HTML5, CSS3 and Javascript every day, I also use frameworks such as Bootstrap and AngularJS. Let me turn your ideas into code.</p>
-              </div>
-              <div class="col-sm-4">
-                <span class="fa fa-bar-chart"></span>
-                <h3>Experince</h3>
-                <p>Collecting, cleaning, and analysing your business data to find value-adding insights. I use R, Python, and SQL to interpret complex information into intelligible reports and dashboards.</p>
-              </div>
+                <img class="my-img" src="images/steve.jpg"/>
+                <p>
+                I am Stephen Fianu, a software developer. I am passionate about helping people and businesses solve problems 
+                    with Information Technology, I delight to bring creative ideas to life. Whenever I don't write programming logics, I find designing (UI/UX) very useful.<br>
+                    I am a music lover, <span style="font-size: 1.2rem; font-style: italic;">Travis Greene </span> my kinda music artist anyday anytime<br><br>
+                    <a href="https://drive.google.com/file/d/1olYgh7RE5Z_GzJ6fxeuRTAFfCLSKOXXQ/view?usp=sharing" target="_blank"><i class="fa fa-file" style="font-size:14px; margin-right: 0.2rem;" ></i>See Resume</a></p>
+                    <small style="font-size: 14px; color: rgb(167, 113, 113); opacity: 0.7; text-align: center;">#web #mobile #backend #ui/ux</small></p>
+            </div>               
+            
+        </section>
+        <section id="skill">
+            <div class="hidden">
+                <h3>Skill & Experience</h3>
+                <p>
+                From designing relational databases to writing sql queries all the way to writing the business logic, I have the ability to come with a working application.
+                I currrently work with <span style="font-weight: 600;">Stanbic Bank Ghana</span> as a backend developer. I also served as an Intern with Stanbic in the past. I've gained more experience working with
+                some developer experts from there.<br>
+                <br><span style="color: #7c4848;">Skill Sets</span></p>
+                <div class="tools">
+                    <ul>
+                        <li>JAVA</li>
+                        <li>SPRINGBOOT</li>
+                        <li>SQL / NoSQL</li>
+                        <li>MESSAGE QUEUE</li>
+                    </ul>
+                    <ul>
+                        <li> HTML/CSS</li>
+                        <li>SERVER MONITORING</li>
+                        <li>GRAPH QL</li>
+                        <li>Go lang</li>
+                    </ul>
+                </div>
             </div>
-          </section>
-    </body>
-    <script src="js/scripts.js"></script>
+            <div class="card">
+                <div>
 
+                </div>
+            </div>              
+        </section>
+    </body>
+
+
+
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed("#auto-type", {
+        strings : ["“Perfection is achieved not when there is nothing more to add,\r\nbut rather when there is nothing more to take away.” by [ Antoine de Saint-Exupery ] "],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: false,
+        })
+    </script>
     <footer>
 
     </footer>

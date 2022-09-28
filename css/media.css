@@ -1,54 +1,106 @@
 @media only screen and (max-width: 700px) {
-    .img-box {
+    .container {
+        height: 200vh;
+    }
+    .intro {
+        width: 602px;
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: 800;
+        left: 100px;
+        top: 200px;
+    }
+    .welcome {
         display: none;
     }
-    
-    .my-img {
+    .pulser7 {
+        display: none;
+    }
+    .intro-summary{
+        width: 100%;
+        margin-top: 14rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .my-logo {
+        position: absolute;
+        width: 18rem;
+        height: 6rem;
+        left: 15rem;
+        top: 25rem;
+        cursor: pointer;
+    }
+    .container2 {
+        position: absolute;
+        top: 500px;
+    }
+    .container .my-img {
         display: none;
     }
 
     .profiles {
-        top: 300px;
-        left: 12rem;
+        display: flex;
+        top: 500px;
+        font-size: x-large;
     }
 
+    .pulser3::after {
+        left: 0.5rem;
+        top: 7.5rem;
+    }
+
+    .pulser4::after {
+        content: 'golang';
+        text-align: center;
+        position: absolute;
+        top: 12rem;
+        left: 22rem;
+        color: rgb(10, 106, 119);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        }
+
     .profiles .fa {
-        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .qoute {
+        display: none;
     }
 
     .hire-btn {
         display: none;
     }
+     
+    .hidden {
+        filter: none;
+    }
 
-    #about .row{
-        width: 900px;
+    #about{
+        width: 780px;
+    }
+
+    #about .my-img {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        left: 10px;
+        top: 0.5rem;
+    }
+
+    #skill{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100vh;
     }
 }
 
-@media only screen and (max-width: 1200px) {
-
-    .img-box {
-        width: 230px;
-        height: 230px;
-        left: 700px;
-    }
-    
-    .my-img {
-        width: 230px;
-        height: 230px;
-        left: 710px;
-    }
-
-    .profiles {
-        top: 300px;
-        left: 12rem;
-    }
-
-    .hire-btn {
+@media only screen and (min-width: 700px) {
+    #about .my-img {
         display: none;
-    }
-
-    #about .row{
-        width: 1000px;
     }
 }
