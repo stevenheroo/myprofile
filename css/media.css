@@ -102,6 +102,46 @@
         width: 780px;
 
     }
+
+    .phoneModal {
+        display: block;
+        place-items: center;
+        width: 780px;
+        margin-top: -5rem;
+        padding: 2rem;
+    }
+
+    .phoneModal h5{
+        font-size: 1.5rem;
+        color: #fdeded;
+    }
+
+    .phone-inputs {
+        display: grid;
+        place-items: left;
+        width: 100%;
+    }
+
+    .phone-inputs input,
+    .phone-inputs select,
+    .phone-inputs textarea {
+        width: 80%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .phone-inputs select {
+        width: 50%;
+    }
+    .phone-inputs textarea {
+        height: 10rem;
+    }
+    .form-btns button{
+        width: 80%;
+    }
+
+    footer {
+        width: 780px;
+    }
 }
 
 @media only screen and (min-width: 700px) {

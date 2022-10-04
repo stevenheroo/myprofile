@@ -277,6 +277,14 @@ body {
     border: none;
 }
 
+.phoneModal {
+  display: none;
+}
+
+.phoneContent {
+  display: none;
+}
+
 /* The Close Button */
 .close {
   float: right;
@@ -753,4 +761,8 @@ li {
     color: #7c4848;
   }
 
+  footer {
+    padding: 5rem;
+    color: #7c4848;
+  }
 
